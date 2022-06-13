@@ -1,0 +1,33 @@
+include functions.pug
+include variables.pug
+
+-
+    let styles = [
+        "./css/index.css",
+        "./css/index_adaptation.css",
+    ];
+
+    let scripts = [
+        "./js/common.js",
+        "./js/index.js",
+    ];
+
+    let siteTitle = 'Омирка';
+
+doctype
+html(lang="ru")
+
+    include head.pug
+
+    body
+
+        .wrapper
+
+            include header.pug
+
+            main.main
+
+            include footer.pug
+
+        each val in scripts
+            script(src=val)
