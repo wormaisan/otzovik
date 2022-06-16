@@ -34,17 +34,18 @@ header.header
                 span
 
 .header__burgerContainer
-    .header__burgerBody
-        .header__burgerMenu
-            ul
-              each val in burgerMenuItems
-                li
-                    a(href=val.link)=val.title
-        a.header__burgerBtn.blockBtn(href=burgerBtn.link)=burgerBtn.title
-        .header__burgerSocial
-            ul
-              each val in socialItems
-                li
-                    a(href=val.link title=val.title)
-                        svg
-                            use(xlink:href=val.src+"#"+val.id)
+    .header__burgerBodyWrapper
+        .header__burgerBody.container.px-0
+            .header__burgerMenu
+                ul
+                  each val in burgerMenuItems
+                    li
+                        a(href=val.link)=val.title
+            a.header__burgerBtn.blockBtn(href=burgerBtn.link)=burgerBtn.title
+            .header__burgerSocial
+                ul
+                  each val in socialItems
+                    li
+                        a(href=val.link title=val.title)
+                            svg
+                                use(xlink:href=val.src+"#"+val.id)
