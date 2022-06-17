@@ -25,6 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
 /**********************************************/
 
 
+/* сработает при прокрутке сраницы */
+
+document.addEventListener('scroll', function(event) {
+
+  closeBurgerMenu();
+
+});
+
+/**********************************************/
+
+
 /* бургер меню */
 
 function burgerMenuSetting() {

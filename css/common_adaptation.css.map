@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"common_adaptation.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/common_adaptation.scss"],"names":[],"mappings":"AACA;EACE;IACE;;;EAGF;IACE;;;EAGF;IACE;;;EAGF;IACE;;;EAMA;IACE;;;AAyBN;EAEE;IACE;;;EAGF;IACE;;;EAKA;IACE;IACA;;EAEA;IACE;;;EAKN;IACE;;;AAQJ;EAEE;IACE;IACA;;;EASI;IACE;IACA;;;EAMR;IACE;;;EAGF;IACE;IACA;;;EAGF;IACE;;;AAiBJ;EAEE;IACE;;;AAgBJ;EAEE;IACE;;;EAGF;IACE;;;EAGF;IACE","file":"common_adaptation.css"}

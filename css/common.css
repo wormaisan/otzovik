@@ -2,6 +2,10 @@
   font-family: OpenSans-Regular;
   src: url(../fonts/OpenSans-Regular.ttf);
 }
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
 *,
 *::before,
 *::after {
@@ -14,6 +18,7 @@ html {
   color: #969696;
   font-family: OpenSans-Regular, sans-serif;
   font-size: 62.5%;
+  font-weight: 400;
 }
 
 a:not(.outline),
@@ -118,14 +123,43 @@ img {
 }
 
 .blockBtn {
+  align-items: center;
   background: linear-gradient(224.39deg, #35D5A5 2.1%, #00C7C5 32.94%, #2D9BE0 57.62%, #5277F7 71.52%, #5B75F6 79.13%, #7370F4 91.42%, #836DF3 98.23%);
   border-radius: 50px;
-  display: inline-block;
   color: #ffffff;
+  display: flex;
   font-size: 1.6rem;
+  justify-content: center;
   line-height: 1;
   padding: 12px;
-  text-align: center;
+}
+
+.linkHover {
+  display: inline-block;
+  position: relative;
+}
+.linkHover::before {
+  background-color: #5277f7;
+  border: none;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+.linkHover:hover::before {
+  opacity: 1;
+}
+
+.btnHover {
+  transition: linear-gradient 0.3s;
+}
+.btnHover:hover {
+  background: linear-gradient(#d4dbf2, #d4dbf2);
 }
 
 .preloader {
@@ -152,11 +186,70 @@ img {
 
 .header__logo {
   height: 42px;
+  padding: 0;
   width: 93px;
 }
 
-.header__nav {
+.header__menu {
   display: none;
+}
+.header__menu ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 640px;
+  margin: 0 -20px 0 auto;
+}
+.header__menu ul li a {
+  color: #819ec7;
+  font-size: 2.1rem;
+  font-style: italic;
+  line-height: 1.38;
+  padding: 5px 0;
+}
+
+.header__social {
+  align-self: center;
+}
+.header__social ul {
+  align-items: center;
+  display: flex;
+}
+.header__social ul li {
+  margin-right: 20px;
+}
+.header__social ul li:last-child {
+  margin-right: 0;
+}
+.header__social ul li a {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.header__social ul li a svg {
+  fill: #d4dbf2;
+  height: 100%;
+  width: 100%;
+}
+
+.header__mainSocial {
+  display: none;
+  transition: fill 0.3s;
+}
+.header__mainSocial ul {
+  justify-content: flex-end;
+}
+.header__mainSocial svg:hover {
+  fill: url(#gradient-social-main);
+}
+
+.header__btn {
+  border-radius: 40px;
+  display: none;
+  font-family: OpenSans-Bold, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  max-width: 405px;
 }
 
 .header__burgerIcon {
@@ -234,15 +327,18 @@ img {
   padding-bottom: 20px;
 }
 
+.header__burgerMenu ul {
+  display: flex;
+  flex-direction: column;
+}
 .header__burgerMenu ul li {
   border-bottom: 1px solid #e5e5e5;
 }
 .header__burgerMenu ul li a {
   color: #000000;
-  display: block;
   font-size: 1.8rem;
   line-height: 1.39;
-  padding: 13px 10px;
+  padding: 13px 0;
 }
 
 .header__burgerBtn {
@@ -252,22 +348,10 @@ img {
 }
 
 .header__burgerSocial {
-  align-self: center;
+  transition: fill 0.3s;
 }
-.header__burgerSocial ul {
-  align-items: center;
-  display: flex;
-}
-.header__burgerSocial ul li {
-  margin-right: 20px;
-}
-.header__burgerSocial ul li:last-child {
-  margin-right: 0;
-}
-.header__burgerSocial ul li a svg {
-  fill: #d4dbf2;
-  height: 40px;
-  width: 40px;
+.header__burgerSocial svg:hover {
+  fill: url(#gradient-social-burger);
 }
 
 /*End Header*/

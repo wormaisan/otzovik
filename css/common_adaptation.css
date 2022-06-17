@@ -1,3 +1,86 @@
+@media (min-width: 1680px) {
+  .container {
+    max-width: 1680px;
+  }
 
+  .header__menu {
+    display: block;
+  }
+
+  .header__btn {
+    display: flex;
+  }
+
+  .header__burgerIcon {
+    display: none;
+  }
+
+  .header__mainSocial ul {
+    margin-right: 27px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__social {
+    display: block;
+  }
+
+  .header__burgerBody {
+    padding-bottom: 0;
+  }
+
+  .header__burgerMenu ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header__burgerMenu ul li {
+    border-bottom: none;
+  }
+
+  .header__burgerSocial {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .header__logo {
+    height: 60px;
+    width: 130px;
+  }
+
+  .header__social ul li a {
+    height: 60px;
+    width: 60px;
+  }
+
+  .header__btn {
+    min-height: 60px;
+  }
+
+  .header__burgerIcon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .header__burgerContainer {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .header__btn {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 576px) {
+  .header__btn {
+    display: flex;
+  }
+
+  .header__burgerBtn {
+    display: none;
+  }
+
+  .header__burgerSocial {
+    margin-top: 20px;
+  }
+}
 
 /*# sourceMappingURL=common_adaptation.css.map */

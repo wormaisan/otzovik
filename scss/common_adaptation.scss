@@ -1,22 +1,168 @@
+//1680
+@media (min-width: 1680px) {
+  .container {
+    max-width: 1680px;
+  }
 
-//1024
-@media (max-width: 1024px) {
+  .header__menu {
+    display: block;
+  }
 
+  .header__btn {
+    display: flex;
+  }
+
+  .header__burgerIcon {
+    display: none;
+  }
+
+
+  .header__mainSocial {
+
+    & ul {
+      margin-right: 27px;
+    }
+  }
+
+}
+//End 1680
+
+
+// >= 1400 и < 1680
+@media (min-width: 1400px) and (max-width: 1680px) {
 
 
 }
-//End 1024
+// >= 1400 и < 1680
+
+
+//1400
+@media (min-width: 1400px) {
+
+
+}
+//End 1400
+
+
+//1200
+@media (min-width: 1200px) {
+
+  .header__social {
+    display: block;
+  }
+
+  .header__burgerBody {
+    padding-bottom: 0;
+  }
+
+  .header__burgerMenu {
+
+    & ul {
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      & li {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .header__burgerSocial {
+    display: none;
+  }
+
+}
+//End 1200
+
+
+//992
+@media (min-width: 992px) {
+
+  .header__logo {
+    height: 60px;
+    width: 130px;
+  }
+
+  .header__social {
+
+    & ul {
+
+      & li {
+
+        & a {
+          height: 60px;
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  .header__btn {
+    min-height: 60px;
+  }
+
+  .header__burgerIcon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .header__burgerContainer {
+    padding-top: 80px;
+  }
+
+
+}
+//End 992
+
+
+// >= 768 и < 991
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+// >= 768 и < 991
 
 
 //768
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+
+  .header__btn {
+    font-size: 1.8rem;
+  }
 
 }
 //End 768
 
 
+// >= 576 и < 768
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+}
+// >= 576 < 768
+
+
+//576
+@media (min-width: 576px) {
+
+  .header__btn {
+    display: flex;
+  }
+
+  .header__burgerBtn {
+    display: none;
+  }
+
+  .header__burgerSocial {
+    margin-top: 20px;
+  }
+
+}
+//End 576
+
+
 //480
-@media (max-width: 480px) {
+@media (min-width: 480px) {
 
 
 
